@@ -1,0 +1,599 @@
+grf {
+	grfid: "JV\51\01";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	version: 0;
+	min_compatible_version: 0;
+	}
+
+///////////////////////////////
+
+spriteset (spriteset_hb, "gfx/hb.png") {
+    [ 0, 	0, 64,128, -31,  -110]
+	[ 64, 	0, 64,128, -31,  -110]
+}
+
+spriteset (spriteset_tent, "gfx/tent.png") {
+    [ 0, 	0, 64, 52, -31,  -34]
+	[ 64, 	0, 64, 52, -31,  -34]
+}
+
+spriteset (spriteset_ring, "gfx/ring.png") {
+    [ 0, 	0, 64, 52, -31,  -34]
+	[ 64, 	0, 64, 52, -31,  -34]
+	[ 128, 	0, 64, 52, -31,  -34]
+	[ 192, 	0, 64, 52, -31,  -34]
+}
+spriteset (spriteset_sh, "gfx/sh.png") {
+    [ 0, 0, 64, 96, -31,  -78]
+}
+spriteset (spriteset_starship, "gfx/starship.png") {
+    [ 0, 	0, 64, 69, -31,  -50]
+	[ 64, 	0, 64, 69, -31,  -50]
+}
+
+spriteset (spriteset_stack, "gfx/stack.png") {
+    [ 0, 	0, 64, 128, -31,  -110]
+	[ 64, 	0, 64, 128, -31,  -110]
+}
+
+spriteset (spriteset_proto, "gfx/proto.png") {
+    [ 0, 	0, 64, 69, -31,  -50]
+	[ 64, 	0, 64, 69, -31,  -50]
+}
+
+spriteset (spriteset_f9, "gfx/f9.png") {
+    [ 0, 	0, 64, 96, -31,  -78]
+	[ 64, 	0, 64, 96, -31,  -78]
+}
+
+spriteset (spriteset_oisly, "gfx/oisly.png") {
+    [ 0, 	0, 64, 96, -31,  -78]
+	[ 64, 	0, 64, 96, -31,  -78]
+}
+
+/////////////////////////////////
+
+spritelayout spritelayout_hb1 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_hb(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_hb2 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_hb(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_tent1 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_tent(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_tent2 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_tent(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_conc {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+}
+
+spritelayout spritelayout_ring1 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_ring(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_ring2 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_ring(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_ring3 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_ring(2);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_ringc {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_ring(3);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_sh {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_sh(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_ss1 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_starship(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_ss2 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_starship(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_sssh {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_stack(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_sssc {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_stack(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_hopper {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_proto(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_sn5 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_proto(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_f9 {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_f9(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_f9l {
+    ground {
+        sprite: GROUNDSPRITE_CONCRETE;
+    }
+    building {
+        sprite: spriteset_f9(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_oisly1 {
+    ground {
+        sprite: GROUNDSPRITE_WATER;
+    }
+    building {
+        sprite: spriteset_oisly(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+spritelayout spritelayout_oisly2 {
+    ground {
+        sprite: GROUNDSPRITE_WATER;
+    }
+    building {
+        sprite: spriteset_oisly(1);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+/////////////////////////////////
+
+switch (FEAT_OBJECTS, SELF, switch_hb, view) {
+    1:  spritelayout_hb2;
+    spritelayout_hb1;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_tent, view) {
+    1:  spritelayout_tent2;
+    spritelayout_tent1;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_ring, view) {
+    1:  spritelayout_ring2;
+    2:  spritelayout_ring3;
+    3:  spritelayout_ringc;
+    spritelayout_ring1;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_ss, view) {
+    1:  spritelayout_ss2;
+    spritelayout_ss1;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_stack, view) {
+    1:  spritelayout_sssh;
+    spritelayout_sssc;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_proto, view) {
+    1:  spritelayout_sn5;
+    spritelayout_hopper;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_f9, view) {
+    1:  spritelayout_f9l;
+    spritelayout_f9;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_oisly, view) {
+    1:  spritelayout_oisly2;
+    spritelayout_oisly1;
+}
+
+/////////////////////////////////
+
+item (FEAT_OBJECTS, item_hb) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_HB);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              2;
+    }
+    graphics {
+		default: 			switch_hb;
+        additional_text:    string(STR_HB_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_tent) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_TENT);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              2;
+    }
+    graphics {
+		default: 			switch_tent;
+        additional_text:    string(STR_TENT_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_conc) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_CONC);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_conc;
+        additional_text:    string(STR_CONC_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_ring) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_RING1);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              4;
+    }
+    graphics {
+		default: 			switch_ring;
+        additional_text:    string(STR_RING1_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_starship) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_SS);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              2;
+    }
+    graphics {
+		default: 			switch_ss;
+        additional_text:    string(STR_SS_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_sh) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_SH);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_sh;
+        additional_text:    string(STR_SH_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_stack) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_STACK);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              2;
+    }
+    graphics {
+		default: 			switch_stack;
+        additional_text:    string(STR_STACK_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_proto) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_PROTO);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              2;
+    }
+    graphics {
+		default: 			switch_proto;
+        additional_text:    string(STR_PROTO_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_f9) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_F9);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              2;
+    }
+    graphics {
+		default: 			switch_f9;
+        additional_text:    string(STR_F9_PURCHASE);
+    }
+}
+
+item (FEAT_OBJECTS, item_oisly) {
+    property {
+        class:                  "JVSY";
+        classname:              string(STR_JVSY);
+        name:                   string(STR_OISLY);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_NOT_ON_LAND);
+        height:                 10;
+        num_views:              2;
+    }
+    graphics {
+		default: 			switch_oisly;
+        additional_text:    string(STR_OISLY_PURCHASE);
+    }
+}

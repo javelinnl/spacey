@@ -1,0 +1,31 @@
+##grflangid 0x01
+# This is the English language file
+
+# GRF name and description definitions
+STR_GRF_NAME        :{TITLE}
+STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}Rocket related object set{}Any simularities to Elon Musks company are purely coincidental{}I swear!! It's convergent evolution!{}{}{BROWN}By Javelin{ORANGE}NL
+
+# Object classes
+STR_JVSY          :SpaceY
+
+# Object name and description
+STR_HB          	:High Bay
+STR_HB_PURCHASE 	:Get your ass to Mars!
+STR_TENT          	:Tent
+STR_TENT_PURCHASE 	:Get your ass to Mars!
+STR_CONC          	:Concrete
+STR_CONC_PURCHASE 	:Get your ass to Mars!
+STR_RING1          	:Rings
+STR_RING1_PURCHASE 	:Get your ass to Mars!
+STR_SH          	:Super Heavy
+STR_SH_PURCHASE 	:Get your ass to Mars!
+STR_SS          	:StarShip
+STR_SS_PURCHASE 	:Get your ass to Mars!
+STR_STACK          	:Full StarShip stack
+STR_STACK_PURCHASE 	:Get your ass to Mars!
+STR_PROTO			:Prototypes
+STR_PROTO_PURCHASE	:Get your ass to Mars!
+STR_F9          	:Falcon 9 Block 5
+STR_F9_PURCHASE 	:Get your ass to Mars!
+STR_OISLY			:Of Course I Still Love You
+STR_OISLY_PURCHASE	:Get your ass to Mars!
