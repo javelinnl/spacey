@@ -905,36 +905,36 @@ switch(FEAT_AIRCRAFT, SELF, sndrocket, getbits(extra_callback_info1, 0, 8)) {
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor1, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..4:		spriteset_smoke;
-5..255: 	spriteset_rotor1;
+2..7:		spriteset_smoke;
+8..255: 	spriteset_rotor1;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor2, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..4:		spriteset_smoke;
-5..255: 	spriteset_rotor2;
+2..7:		spriteset_smoke;
+8..255: 	spriteset_rotor2;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor3, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..4:		spriteset_smoke;
-5..255: 	spriteset_rotor3;
+2..7:		spriteset_smoke;
+8..255: 	spriteset_rotor3;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor4, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..4:		spriteset_smoke;
-5..255: 	spriteset_rotor4;
+2..7:		spriteset_smoke;
+8..255: 	spriteset_rotor4;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor5, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..4:		spriteset_smoke;
-5..255: 	spriteset_rotor5;
+2..7:		spriteset_smoke;
+8..255: 	spriteset_rotor5;
 
 }
 
