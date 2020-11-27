@@ -13,6 +13,8 @@ STR_HB          	:High Bay
 STR_HB_PURCHASE 	:Get your ass to Mars!
 STR_TENT          	:Tent
 STR_TENT_PURCHASE 	:Get your ass to Mars!
+STR_LT				:Launch Tower
+STR_LT_PURCHASE		:Get your ass to Mars!
 STR_CONC          	:Concrete
 STR_CONC_PURCHASE 	:Get your ass to Mars!
 STR_RING1          	:Rings
@@ -25,7 +27,22 @@ STR_STACK          	:Full StarShip stack
 STR_STACK_PURCHASE 	:Get your ass to Mars!
 STR_PROTO			:Prototypes
 STR_PROTO_PURCHASE	:Get your ass to Mars!
-STR_F9          	:Falcon 9 Block 5
+STR_F1          	:Falcon 1
+STR_F1_PURCHASE 	:Get your ass to Mars!
+STR_F9          	:Falcon 9
 STR_F9_PURCHASE 	:Get your ass to Mars!
-STR_OISLY			:Of Course I Still Love You
+STR_F9H          	:Falcon Heavy
+STR_F9H_PURCHASE 	:Get your ass to Mars!
+STR_OISLY			:Boosters
 STR_OISLY_PURCHASE	:Get your ass to Mars!
+
+STR_VEH_F1			: Falcon 1
+STR_VEH_F9			: Falcon 9 Block 5
+STR_VEH_F91			: Falcon 9 v1.0
+STR_VEH_F9D			: Falcon 9 w/ Dragon Capsule
+STR_VEH_F9H			: Falcon Heavy
+STR_VEH_F9B			: Falcon 9 Booster
+STR_VEH_HOP			: Starhopper prototype
+STR_VEH_SN5			: SN5 prototype
+STR_VEH_SS1			: StarShip (cargo/fuel)
+STR_VEH_SS2			: StarShip (passenger)
