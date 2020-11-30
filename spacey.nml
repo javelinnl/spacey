@@ -1070,36 +1070,36 @@ switch(FEAT_AIRCRAFT, SELF, sndrocket, getbits(extra_callback_info1, 0, 8)) {
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor1, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..7:		spriteset_smoke;
-8..255: 	spriteset_rotor1;
+2..14:		spriteset_smoke;
+15..255: 	spriteset_rotor1;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor2, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..7:		spriteset_smoke;
-8..255: 	spriteset_rotor2;
+2..9:		spriteset_smoke;
+10..255: 	spriteset_rotor2;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor3, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..7:		spriteset_smoke;
-8..255: 	spriteset_rotor3;
+2..9:		spriteset_smoke;
+10..255: 	spriteset_rotor3;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor4, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..7:		spriteset_smoke;
-8..255: 	spriteset_rotor4;
+2..9:		spriteset_smoke;
+10..255: 	spriteset_rotor4;
 
 }
 
 switch(FEAT_AIRCRAFT, SELF, rocketrotor5, aircraft_height) {
 0..1: 		spriteset_rotor0;
-2..7:		spriteset_smoke;
-8..255: 	spriteset_rotor5;
+2..14:		spriteset_smoke;
+15..255: 	spriteset_rotor5;
 
 }
 
@@ -1329,6 +1329,7 @@ item(FEAT_AIRCRAFT, item_veh_ss1) {
 
 //vehicles cars///////////////////////
 
+
 item(FEAT_ROADVEHS, item_modelx) {
     property {
         name:                           string(STR_NAME_MODELX);
@@ -1342,13 +1343,13 @@ item(FEAT_ROADVEHS, item_modelx) {
         cost_factor:                    108;
         running_cost_factor:            90;
         sprite_id:                      SPRITE_ID_NEW_ROADVEH; //enable new graphics
-        speed:                          120 km/h;
+        speed:                          127 km/h;
         refit_cost:                     0; 
         running_cost_base:              RUNNING_COST_ROADVEH;
-        power:                          120 hp;
-        weight:                         9.5 ton;
-        cargo_capacity:                 20;
-        sound_effect:                   SOUND_BUS_START_PULL_AWAY;
+        power:                          260 hp;
+        weight:                         2.3 ton;
+        cargo_capacity:                 5;
+        sound_effect:                   SOUND_CAR_HORN_2;
     }
 
     graphics {

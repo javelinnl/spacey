@@ -3,7 +3,7 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
-STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}Rocket related object set{}Any simularities to Elon Musks company are purely coincidental{}I swear!! It's convergent evolution!{}{}{BROWN}By Javelin{ORANGE}NL
+STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}SpaceX inspired, rocket related object and vehicle set{}{}{BROWN}By Javelin{ORANGE}NL
 
 # Object classes
 STR_JVSY          :SpaceY buildings
