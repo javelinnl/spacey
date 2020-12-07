@@ -4,6 +4,7 @@
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
 STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}SpaceX inspired, rocket related object and vehicle set{}{}{BROWN}By Javelin{ORANGE}NL
+STR_GRF_URL			:https://www.tt-forums.net/viewtopic.php?f=26&t=87812
 
 # Object classes
 STR_JVSY          :SpaceY buildings
@@ -14,8 +15,12 @@ STR_HB          	:High Bay
 STR_HB_PURCHASE 	:Get your ass to Mars!
 STR_TENT          	:Tent
 STR_TENT_PURCHASE 	:Get your ass to Mars!
+STR_TANK          	:Liquid Storage
+STR_TANK_PURCHASE 	:Get your ass to Mars!
 STR_LT				:Launch Tower
 STR_LT_PURCHASE		:Get your ass to Mars!
+STR_LTEST			:Launch test platform
+STR_LTEST_PURCHASE	:Get your ass to Mars!
 STR_CONC          	:Concrete
 STR_CONC_PURCHASE 	:Get your ass to Mars!
 STR_RING1          	:Rings
@@ -40,6 +45,7 @@ STR_OISLY			:Of Course I Still Love You
 STR_OISLY_PURCHASE	:Get your ass to Mars!
 
 STR_VEH_F1			: Falcon 1
+STR_VEH_F9GRASS		: Grasshopper prototype
 STR_VEH_F9			: Falcon 9 Block 5
 STR_VEH_F91			: Falcon 9 v1.0
 STR_VEH_F9D			: Falcon 9 w/ Dragon Capsule
