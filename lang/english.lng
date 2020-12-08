@@ -6,9 +6,14 @@ STR_GRF_NAME        :{TITLE}
 STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}SpaceX inspired, rocket related object and vehicle set{}{}{BROWN}By Javelin{ORANGE}NL
 STR_GRF_URL			:https://www.tt-forums.net/viewtopic.php?f=26&t=87812
 
+STR_PARAMETER_NAME	:New concrete type
+STR_PARAMETER_DESC	:Select concrete type, original dark grey or light variant.
+STR_PARAM0			:original concrete
+STR_PARAM1			:light concrete
+
 # Object classes
-STR_JVSY          :SpaceY buildings
-STR_JVSZ          :SpaceY vehicles
+STR_JVSY          	:SpaceY buildings
+STR_JVSZ          	:SpaceY vehicles
 
 # Object name and description
 STR_HB          	:High Bay
@@ -56,3 +61,4 @@ STR_VEH_SN5			: SN5 prototype
 STR_VEH_SS1			: StarShip
 
 STR_NAME_MODELX		: Model X
+STR_NAME_OISLY		: Autonomous drone ship

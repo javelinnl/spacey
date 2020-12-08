@@ -5,7 +5,23 @@ grf {
 	url:	string(STR_GRF_URL);
 	version: 0;
 	min_compatible_version: 0;
+	param 0 {
+		concrete_select {
+		type:		bool;
+		name:		string(STR_PARAMETER_NAME);
+		desc:		string(STR_PARAMETER_DESC);
+		}
 	}
+}
+
+///////////////////////////////
+
+if (param[0] >= 1) 
+{ 
+	replace (1420, "gfx/concrete.png") {
+ 		[ 0, 0, 64,32, -31,  0]
+    }
+}
 
 //cargotable//////////////////////////////////////////////////////////
 
@@ -328,6 +344,29 @@ spriteset(spriteset_modelx, "gfx/modelx.png") {
     [ 224,    0,       20,    16,      -6,        -7]
 }
 
+spriteset(spriteset_veh_oisly, "gfx/veh_oisly.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ 0,      0,       64,    48,     -32,       -27]
+    [ 64,     0,       64,    48,     -57,       -15]
+    [ 128,    0,       64,    48,     -32,       -27]
+    [ 192,    0,       64,    48,      -5,       -13]
+    [ 256,    0,       64,    48,     -32,       -27]
+    [ 320,    0,       64,    48,     -58,       -15]
+    [ 384,    0,       64,    48,     -32,       -27]
+    [ 448,    0,       64,    48,     -10,       -15]
+}
+
+spriteset(spriteset_veh_oisly2, "gfx/veh_oisly2.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ 0,      0,       64,    72,     -32,       -51]
+    [ 64,     0,       64,    72,     -57,       -39]
+    [ 128,    0,       64,    72,     -32,       -51]
+    [ 192,    0,       64,    72,      -5,       -37]
+    [ 256,    0,       64,    72,     -32,       -51]
+    [ 320,    0,       64,    72,     -58,       -39]
+    [ 384,    0,       64,    72,     -32,       -51]
+    [ 448,    0,       64,    72,     -10,       -39]
+}
 
 //spritegroup vehicles////////////////////////////////////////////////////
 
@@ -394,6 +433,11 @@ spritegroup spritegroup_veh_ss2 {
 spritegroup spritegroup_modelx {
 	loading: [spriteset_modelx];
 	loaded:  [spriteset_modelx];
+}
+
+spritegroup spritegroup_veh_oisly {
+	loading: [spriteset_veh_oisly,spriteset_veh_oisly2];
+	loaded:  [spriteset_veh_oisly,spriteset_veh_oisly2];
 }
 
 //spritelayout objects///////////////////////////////
@@ -1910,7 +1954,6 @@ item(FEAT_AIRCRAFT, item_veh_ss1) {
 
 //vehicles cars///////////////////////
 
-
 item(FEAT_ROADVEHS, item_modelx) {
     property {
         name:                           string(STR_NAME_MODELX);
@@ -1938,4 +1981,55 @@ item(FEAT_ROADVEHS, item_modelx) {
     }
 }
 
+//vehicles ships///////////////////////
 
+spriteset(sprite_oisly_gui, "gfx/veh_oisly.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ 0,      0,       64,    48,     -32,       -27]
+    [ 64,     0,       64,    48,     -57,       -15]
+    [ 128,    0,       64,    48,     -32,       -27]
+    [ 192,    0,       64,    48,      -5,       -13]
+    [ 256,    0,       64,    48,     -32,       -27]
+    [ 320,    0,       64,    48,     -58,       -15]
+    [ 384,    0,       64,    48,     -32,       -30]
+    [ 448,    0,       64,    48,     -10,       -15]
+} 
+
+switch(FEAT_SHIPS,SELF,oisly_gui,getbits(extra_callback_info1, 0, 8)) {
+	0x10: sprite_oisly_gui; //depot gui
+	0x11: sprite_oisly_gui; //vehicle details
+	0x12: sprite_oisly_gui; //vehicle list
+	0x20: sprite_oisly_gui; //purchase list
+	0x21: sprite_oisly_gui; //preview gui
+	spritegroup_veh_oisly;
+	}
+
+///////
+
+item(FEAT_SHIPS, item_veh_oisly) {
+    property {
+        name:                           string(STR_NAME_OISLY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2015,01,01);
+        model_life:                     165;
+        vehicle_life:                   15;
+        reliability_decay:              20;
+        refittable_cargo_classes:       bitmask(CC_PASSENGERS, CC_EXPRESS);
+        non_refittable_cargo_classes:   bitmask(CC_REFRIGERATED);
+        loading_speed:                  5;
+        cost_factor:                    108;
+        running_cost_factor:            60;
+        sprite_id:                      SPRITE_ID_NEW_SHIP;
+        speed:                          29 km/h;
+        refit_cost:                     0;
+		is_refittable:					1;
+		default_cargo_type:				DEFAULT_CARGO_FIRST_REFITTABLE;
+        cargo_capacity:                 20;
+        sound_effect:                   SOUND_SHIP_HORN;
+		ocean_speed_fraction:			1;
+		canal_speed_fraction:			1;
+	}
+    graphics {
+        default: oisly_gui;
+    }
+}
